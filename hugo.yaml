@@ -1,0 +1,55 @@
+baseURL: "https://axiom-ai.tech/"
+title: "axiom-ai.tech"
+theme: "PaperMod"
+languageCode: "en-us"
+
+# Ensure code highlighting is clean and readable
+pygmentsCodeFences: true
+pygmentsStyle: "monokai"
+
+# PaperMod needs to know both folders are main content sections
+params:
+  env: "production"
+  title: "axiom-ai.tech"
+  description: "Let's talk about AI."
+  author: "Anirban Datta"
+  defaultTheme: "auto"              # Dark/light toggle
+  ShowCodeCopyButtons: true         # 1-click copy on every code block
+  ShowReadingTime: true
+  ShowBreadCrumbs: true
+
+  # Crucial: Tells PaperMod to display posts from both your custom folders
+  mainSections:
+    - agentic-ai
+    - generative-ai
+
+  # Home Page Profile/Header Mode
+  homeInfoParams:
+    Title: "axiom-ai.tech"
+    Content: "Let's talk about AI. Systems architecture, algorithms, GPU memory dynamics, and sovereign agentic foundations."
+
+  # Cover image settings for Page Bundles
+  cover:
+    responsiveImages: true
+    linkFullImages: true
+
+  # Footer
+  footer:
+    hideCopyright: false
+    customText: "Sovereign Engineering · Plain Text Bedrock"
+
+# Navigation Menu Tabs at the top
+menu:
+  main:
+    - identifier: agentic
+      name: "Agentic AI"
+      url: "/agentic-ai/"
+      weight: 10
+    - identifier: generative
+      name: "Generative AI"
+      url: "/generative-ai/"
+      weight: 20
+    - identifier: about
+      name: "About"
+      url: "/about/"
+      weight: 30

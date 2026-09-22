@@ -1,0 +1,154 @@
+================================================================================
+LDE CONSOLIDATED CONTEXT SNAPSHOT (CRYSTAL MODE)
+--------------------------------------------------------------------------------
+GENERATED ON   : 2026-09-22 15:39:39
+MAX DEPTH      : 5
+================================================================================
+
+🎯 TARGET: archetypes (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\archetypes)
+--------------------------------------------------------------------------------
+    ├── default.md
+
+🎯 TARGET: assets (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\assets)
+--------------------------------------------------------------------------------
+
+🎯 TARGET: content (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\content)
+--------------------------------------------------------------------------------
+    ├── about.md
+└── agentic-ai/
+        ├── _index.md
+    └── aaicore/
+            ├── _index.md
+        └── state-dynamics/
+                ├── agent-class.png
+                ├── index.md
+└── generative-ai/
+        ├── _index.md
+    └── transformers/
+            ├── _index.md
+        └── encoder-decoder/
+                ├── index.md
+                ├── transformer.png
+
+🎯 TARGET: data (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\data)
+--------------------------------------------------------------------------------
+
+🎯 TARGET: i18n (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\i18n)
+--------------------------------------------------------------------------------
+
+🎯 TARGET: layouts (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\layouts)
+--------------------------------------------------------------------------------
+
+🎯 TARGET: static (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\static)
+--------------------------------------------------------------------------------
+
+🎯 TARGET: themes (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\themes)
+--------------------------------------------------------------------------------
+└── PaperMod/
+        ├── README.md
+        ├── theme.toml
+    └── .github/
+            ├── PULL_REQUEST_TEMPLATE.md
+        └── ISSUE_TEMPLATE/
+                ├── bug.yaml
+                ├── config.yml
+                ├── enhancement.yaml
+        └── workflows/
+                ├── build-check.yml
+                ├── gh-pages.yml
+    └── assets/
+        └── css/
+            └── common/
+                    ├── 404.css
+                    ├── archive.css
+                    ├── ... [9 more code files hidden by Crystal Mode] ...
+            └── core/
+                    ├── license.css
+                    ├── reset.css
+                    ├── ... [2 more code files hidden by Crystal Mode] ...
+            └── extended/
+                    ├── blank.css
+            └── includes/
+                    ├── chroma-mod.css
+                    ├── chroma-styles.css
+        └── js/
+                ├── fastsearch.js
+                ├── fuse.basic.min.js
+                ├── ... [1 more code files hidden by Crystal Mode] ...
+    └── i18n/
+            ├── ar.yaml
+            ├── be.yaml
+            ├── bg.yaml
+            ├── bn.yaml
+            ├── ca.yaml
+            ├── ckb.yaml
+            ├── cs.yaml
+            ├── da.yaml
+            ├── de.yaml
+            ├── el.yaml
+            ├── en.yaml
+            ├── eo.yaml
+            ├── es.yaml
+            ├── fa.yaml
+            ├── fi.yaml
+            ├── fr.yaml
+            ├── he.yaml
+            ├── hi.yaml
+            ├── hr.yaml
+            ├── hu.yaml
+            ├── id.yaml
+            ├── it.yaml
+            ├── ja.yaml
+            ├── ko.yaml
+            ├── ku.yaml
+            ├── mn.yaml
+            ├── ms.yaml
+            ├── nl.yaml
+            ├── no.yaml
+            ├── oc.yaml
+            ├── pa.yaml
+            ├── pl.yaml
+            ├── pnb.yaml
+            ├── pt.yaml
+            ├── ro.yaml
+            ├── ru.yaml
+            ├── sk.yaml
+            ├── sv.yaml
+            ├── sw.yaml
+            ├── th.yaml
+            ├── tr.yaml
+            ├── uk.yaml
+            ├── uz.yaml
+            ├── vi.yaml
+            ├── zh-tw.yaml
+            ├── zh.yaml
+    └── images/
+            ├── screenshot.png
+            ├── tn.png
+    └── layouts/
+            ├── 404.html
+            ├── archives.html
+            ├── index.json
+            ├── llms.txt
+            ├── robots.txt
+            ├── ... [5 more code files hidden by Crystal Mode] ...
+        └── _markup/
+                ├── render-image.html
+        └── _partials/
+                ├── anchored_headings.html
+                ├── author.html
+                ├── ... [20 more code files hidden by Crystal Mode] ...
+            └── templates/
+                    ├── opengraph.html
+                    ├── schema_json.html
+                    ├── ... [1 more code files hidden by Crystal Mode] ...
+                └── _funcs/
+                        ├── get-page-images.html
+        └── _shortcodes/
+                ├── audio.html
+                ├── collapse.html
+                ├── ... [6 more code files hidden by Crystal Mode] ...
+
+================================================================================
+SUMMARY: Scanned 25 sub-directories and mapped 88 files.
+================================================================================
