@@ -1,9 +1,14 @@
 ================================================================================
 LDE CONSOLIDATED CONTEXT SNAPSHOT (CRYSTAL MODE)
 --------------------------------------------------------------------------------
-GENERATED ON   : 2026-09-22 15:39:39
+GENERATED ON   : 2026-09-27 09:22:52
 MAX DEPTH      : 5
 ================================================================================
+
+🎯 TARGET: .github (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\.github)
+--------------------------------------------------------------------------------
+└── workflows/
+        ├── hugo.yml
 
 🎯 TARGET: archetypes (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\archetypes)
 --------------------------------------------------------------------------------
@@ -38,6 +43,72 @@ MAX DEPTH      : 5
 
 🎯 TARGET: layouts (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\layouts)
 --------------------------------------------------------------------------------
+
+🎯 TARGET: public (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\public)
+--------------------------------------------------------------------------------
+    ├── 404.html
+    ├── index.html
+└── about/
+        ├── index.html
+└── agentic-ai/
+        ├── index.html
+    └── aaicore/
+            ├── index.html
+        └── page/
+            └── 1/
+                    ├── index.html
+        └── state-dynamics/
+                ├── agent-class.png
+                ├── agent-class_hu_168d2b813c451698.png
+                ├── agent-class_hu_5cabb9c47b2c6615.png
+                ├── agent-class_hu_63cd6cb5d700995a.png
+                ├── agent-class_hu_a699fb6573d2379e.png
+                ├── index.html
+                ├── ... [1 more image files hidden] ...
+    └── page/
+        └── 1/
+                ├── index.html
+└── assets/
+    └── css/
+            ├── stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css
+└── categories/
+        ├── index.html
+└── generative-ai/
+        ├── index.html
+    └── page/
+        └── 1/
+                ├── index.html
+    └── transformers/
+            ├── index.html
+        └── encoder-decoder/
+                ├── index.html
+                ├── transformer.png
+                ├── transformer_hu_f319dbbe097d0945.png
+        └── page/
+            └── 1/
+                    ├── index.html
+└── page/
+    └── 1/
+            ├── index.html
+└── tags/
+        ├── index.html
+
+🎯 TARGET: resources (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\resources)
+--------------------------------------------------------------------------------
+└── _gen/
+    └── images/
+        └── agentic-ai/
+            └── aaicore/
+                └── state-dynamics/
+                        ├── agent-class_hu_168d2b813c451698.png
+                        ├── agent-class_hu_5cabb9c47b2c6615.png
+                        ├── agent-class_hu_63cd6cb5d700995a.png
+                        ├── agent-class_hu_a699fb6573d2379e.png
+                        ├── agent-class_hu_e6518147af380e00.png
+        └── generative-ai/
+            └── transformers/
+                └── encoder-decoder/
+                        ├── transformer_hu_f319dbbe097d0945.png
 
 🎯 TARGET: static (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\static)
 --------------------------------------------------------------------------------
@@ -150,5 +221,5 @@ MAX DEPTH      : 5
                 ├── ... [6 more code files hidden by Crystal Mode] ...
 
 ================================================================================
-SUMMARY: Scanned 25 sub-directories and mapped 88 files.
+SUMMARY: Scanned 55 sub-directories and mapped 119 files.
 ================================================================================

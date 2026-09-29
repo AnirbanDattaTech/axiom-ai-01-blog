@@ -25,8 +25,8 @@ params:
 
   # Home Page Profile/Header Mode
   homeInfoParams:
-    Title: "axiom-ai.tech"
-    Content: "Let's talk about AI. Systems architecture, algorithms, GPU memory dynamics, and sovereign agentic foundations."
+    Title: "Let’s talk about AI."
+    Content: "Systems architecture, algorithms, and foundations of Agentic AI. Written simply, from first principles."
 
   # Cover image settings for Page Bundles
   cover:
@@ -41,15 +41,15 @@ params:
 # Navigation Menu Tabs at the top
 menu:
   main:
-    - identifier: agentic
-      name: "Agentic AI"
-      url: "/agentic-ai/"
+    - name: Agentic AI
+      url: /agentic-ai/
       weight: 10
-    - identifier: generative
-      name: "Generative AI"
-      url: "/generative-ai/"
+    - name: Generative AI
+      url: /generative-ai/
       weight: 20
-    - identifier: about
-      name: "About"
-      url: "/about/"
+    - name: Mathematics
+      url: /mathematics/
       weight: 30
+    - name: About
+      url: /about/
+      weight: 40
