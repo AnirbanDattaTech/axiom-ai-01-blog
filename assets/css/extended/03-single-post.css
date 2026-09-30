@@ -1,0 +1,294 @@
+/* ==========================================================================
+   AXIOM-AI.TECH — SINGLE POST READING VIEW (FULL 1140px & JUSTIFIED)
+   File: assets/css/extended/03-single-post.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BOX 1: READING CONTAINER
+   -------------------------------------------------------------------------- */
+.post-single {
+    max-width: var(--main-width, 1140px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-top: 1rem !important;
+    box-sizing: border-box !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 2: POST HEADER & BREADCRUMBS
+   -------------------------------------------------------------------------- */
+.post-header {
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+}
+
+.breadcrumbs {
+    font-family: var(--font-sans) !important;
+    font-size: 0.85rem !important;
+    color: var(--secondary) !important;
+    margin-bottom: 1.25rem !important;
+}
+
+.breadcrumbs a {
+    color: var(--secondary) !important;
+    text-decoration: none !important;
+}
+
+.breadcrumbs a:hover {
+    color: var(--primary) !important;
+}
+
+/* Article Title */
+.post-title {
+    font-family: var(--font-heading) !important;
+    font-weight: var(--heading-weight) !important;
+    letter-spacing: var(--heading-tracking) !important;
+}
+
+/* Subtitle / Description */
+.post-description {
+    font-family: var(--font-body) !important;
+    font-size: 1.15rem !important;
+    line-height: 1.55 !important;
+    color: var(--secondary) !important;
+    margin-bottom: 1.25rem !important;
+}
+
+/* Metadata line (Date · Reading Time · Author) */
+.post-meta {
+    font-family: var(--font-sans) !important;
+    font-size: 0.85rem !important;
+    color: var(--secondary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 3: FEATURED COVER IMAGE (BORDERLESS & CLEAN)
+   -------------------------------------------------------------------------- */
+.post-single .entry-cover {
+    display: block !important;
+    margin: 2rem auto !important;
+    background: transparent !important;   /* No white card box */
+    border: none !important;              /* No border line */
+    padding: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.post-single .entry-cover img {
+    margin: 0 auto !important;
+    max-height: 520px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    border-radius: 4px;
+    display: block !important;
+}
+
+.post-single .entry-cover p,
+.post-single .entry-cover figcaption {
+    font-family: var(--font-sans) !important;
+    font-size: 0.85rem !important;
+    color: var(--secondary) !important;
+    margin-top: 0.75rem !important;
+    text-align: center !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 4: TABLE OF CONTENTS (TOC)
+   -------------------------------------------------------------------------- */
+details.toc {
+    background-color: var(--theme) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    padding: 0.6rem 1.2rem !important;
+    margin: 1.75rem 0 2.5rem 0 !important;
+    width: 100% !important;
+}
+
+details.toc summary {
+    font-family: var(--font-sans) !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+    color: var(--primary) !important;
+    cursor: pointer;
+}
+
+details.toc .inner {
+    padding-top: 0.75rem !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+}
+
+details.toc a {
+    color: var(--secondary) !important;
+    text-decoration: none !important;
+}
+
+details.toc a:hover {
+    color: var(--primary) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 5: BODY PROSE (FULL JUSTIFICATION — ALIGNED LEFT & RIGHT)
+   -------------------------------------------------------------------------- */
+.post-content {
+    font-family: var(--font-body) !important;
+    font-size: 1.125rem !important;      /* 18px reading standard */
+    line-height: 1.8 !important;         /* Generous line-height for justified text */
+    color: var(--content) !important;
+    width: 100% !important;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem !important;
+    text-align: justify !important;
+    text-justify: inter-word !important;
+    hyphens: auto !important;
+    -webkit-hyphens: auto !important;   /* add this line */
+}
+
+/* Section Headings */
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5 {
+    font-family: var(--font-heading) !important;
+    font-weight: var(--heading-weight) !important;
+    letter-spacing: var(--heading-tracking) !important;
+}
+
+/* Blockquotes */
+.post-content blockquote {
+    border-left: 3px solid var(--primary) !important;
+    padding-left: 1.25rem !important;
+    margin: 1.75rem 0 !important;
+    color: var(--secondary) !important;
+    font-style: italic !important;
+    text-align: justify !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 6: INLINE DIAGRAMS & FIGURES
+   -------------------------------------------------------------------------- */
+.post-content figure {
+    margin: 2.5rem auto !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.post-content figure img,
+.post-content img {
+    margin: 0 auto !important;
+    display: block !important;
+    border-radius: 4px;
+    width: auto !important;
+    max-width: 100% !important;
+
+    /* ======================================================================
+       IMAGE HEIGHT KNOB: Change 460px below to experiment (e.g. 400px, 500px)
+       ====================================================================== */
+    max-height: 512px !important;
+}
+
+/* Captions: Centered, muted, and overrides paragraph justify */
+.post-content figcaption,
+.post-content figcaption p {
+    font-family: var(--font-sans) !important;
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    color: var(--secondary) !important;
+    text-align: center !important;       /* FORCES CAPTION TO CENTER */
+    margin-top: 0.75rem !important;
+    display: block !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 7: FOOTNOTES & CITATIONS (ACADEMIC APPARATUS)
+   -------------------------------------------------------------------------- */
+.post-content .footnotes {
+    font-family: var(--font-sans) !important;
+    font-size: 0.875rem !important;      /* ~14px: clean academic scale */
+    line-height: 1.6 !important;
+    color: var(--secondary) !important;
+    margin-top: 1.5rem !important;
+    padding-top: 0.5rem !important;
+    width: 100% !important;
+}
+
+/* Hides Hugo's default <hr> so it doesn't clash with your ## Citations heading */
+.post-content .footnotes hr {
+    display: none !important;
+}
+
+.post-content .footnotes ol {
+    padding-left: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.post-content .footnotes li {
+    margin-bottom: 0.75rem !important;
+    text-align: left !important;         /* Keeps citations flush-left, not justified */
+}
+
+.post-content .footnotes p {
+    display: inline !important;
+    font-size: 0.875rem !important;
+    line-height: 1.6 !important;
+    color: var(--secondary) !important;
+    text-align: left !important;
+}
+
+/* Links & long URLs in citations: won't overflow the screen */
+.post-content .footnotes a {
+    color: var(--secondary) !important;
+    text-decoration: underline !important;
+    text-underline-offset: 2px !important;
+    overflow-wrap: anywhere !important;   /* Breaks long URLs cleanly */
+    word-break: break-word !important;
+}
+
+.post-content .footnotes a:hover {
+    color: var(--primary) !important;
+}
+
+/* Backref arrow (↩) */
+.footnote-backref {
+    text-decoration: none !important;
+    margin-left: 0.35rem !important;
+    color: var(--tertiary) !important;
+    font-family: sans-serif !important;
+}
+
+.footnote-backref:hover {
+    color: var(--primary) !important;
+}
+
+/* In-text citation superscripts (e.g. [1]) inside the article prose */
+.post-content sup a {
+    font-family: var(--font-sans) !important;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    padding: 0 0.15rem !important;
+    text-decoration: none !important;
+    color: var(--accent) !important;
+}
+
+.post-content sup a:hover {
+    text-decoration: underline !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 8: CODE SNIPPETS
+   -------------------------------------------------------------------------- */
+.post-content pre {
+    background-color: var(--code-bg) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+    padding: 1rem !important;
+    margin: 1.75rem 0 !important;
+    width: 100% !important;
+}

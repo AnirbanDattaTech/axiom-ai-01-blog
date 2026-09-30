@@ -1,0 +1,113 @@
+/* ==========================================================================
+   AXIOM-AI.TECH — CATEGORY & SECTION LIST VIEW
+   File: assets/css/extended/04-category-list.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BOX 1: CATEGORY PAGE HEADER (Full 100% Width)
+   Ensures the header spans the full width so cards flow underneath it.
+   -------------------------------------------------------------------------- */
+.page-header {
+    width: 100% !important;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
+    padding-bottom: 1.5rem !important;
+    border-bottom: 1px solid var(--border) !important;
+    box-sizing: border-box !important;
+}
+
+/* Category Title (e.g. "Generative AI", "Agentic AI") */
+.page-header h1 {
+    font-family: var(--font-heading) !important;
+    font-size: 2.35rem !important;
+    font-weight: var(--heading-weight, 700) !important;
+    letter-spacing: var(--heading-tracking, -0.02em) !important;
+    line-height: 1.2 !important;
+    color: var(--primary) !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Category Subtitle / Description */
+.page-header .post-description {
+    font-family: var(--font-body) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.55 !important;
+    color: var(--secondary) !important;
+    max-width: 720px !important;
+}
+
+/* Breadcrumbs on Category page */
+.page-header .breadcrumbs {
+    font-family: var(--font-ui) !important;
+    font-size: 0.85rem !important;
+    color: var(--secondary) !important;
+    margin-bottom: 1rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 2: CATEGORY POST CARDS (BALANCED 2-COLUMN GRID)
+   Desktop & Tablet: 2 cards side-by-side
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    /* All post cards on category list pages */
+    .page-header ~ .post-entry {
+        width: calc(50% - (var(--gap) / 2)) !important;
+        margin-bottom: var(--gap) !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Thumbnail on top */
+    .page-header ~ .post-entry .entry-cover {
+        margin-bottom: 1rem !important;
+        max-height: 220px !important;
+        overflow: hidden !important;
+        border-radius: 4px !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    .page-header ~ .post-entry .entry-cover img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+    }
+
+    /* Card Title */
+    .page-header ~ .post-entry .entry-header h2 {
+        font-family: var(--font-heading) !important;
+        font-size: 1.35rem !important;
+        font-weight: var(--heading-weight, 700) !important;
+        line-height: 1.3 !important;
+        color: var(--primary) !important;
+    }
+
+    /* Card Summary */
+    .page-header ~ .post-entry .entry-content {
+        font-family: var(--font-body) !important;
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        color: var(--secondary) !important;
+        margin: 0.5rem 0 1rem 0 !important;
+    }
+
+    /* Card Footer: Anchors date & author to bottom of card */
+    .page-header ~ .post-entry .entry-footer {
+        font-family: var(--font-ui) !important;
+        font-size: 0.8rem !important;
+        color: var(--secondary) !important;
+        margin-top: auto !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   BOX 3: MOBILE FALLBACK (Single Column)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+    .page-header ~ .post-entry {
+        width: 100% !important;
+        margin-bottom: var(--gap) !important;
+    }
+}

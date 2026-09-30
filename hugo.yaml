@@ -1,7 +1,7 @@
 baseURL: "https://axiom-ai.tech/"
 title: "axiom-ai.tech"
 theme: "PaperMod"
-languageCode: "en-us"
+languageCode: "en-gb"
 
 # Ensure code highlighting is clean and readable
 pygmentsCodeFences: true
@@ -47,9 +47,6 @@ menu:
     - name: Generative AI
       url: /generative-ai/
       weight: 20
-    - name: Mathematics
-      url: /mathematics/
-      weight: 30
     - name: About
       url: /about/
       weight: 40

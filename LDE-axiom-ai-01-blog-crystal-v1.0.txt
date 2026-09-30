@@ -1,7 +1,7 @@
 ================================================================================
 LDE CONSOLIDATED CONTEXT SNAPSHOT (CRYSTAL MODE)
 --------------------------------------------------------------------------------
-GENERATED ON   : 2026-09-27 09:22:52
+GENERATED ON   : 2026-09-30 07:25:09
 MAX DEPTH      : 5
 ================================================================================
 
@@ -16,6 +16,9 @@ MAX DEPTH      : 5
 
 🎯 TARGET: assets (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\assets)
 --------------------------------------------------------------------------------
+└── css/
+    └── extended/
+            ├── library-layout.css
 
 🎯 TARGET: content (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\content)
 --------------------------------------------------------------------------------
@@ -34,6 +37,16 @@ MAX DEPTH      : 5
         └── encoder-decoder/
                 ├── index.md
                 ├── transformer.png
+    └── vision/
+            ├── _index.md
+        └── 01-prologue/
+                ├── figure-01-vit.png
+                ├── figure-02-chhanda.png
+                ├── figure-03-rt2-architecture.png
+                ├── figure-04-hubble-anomalies.jpg
+                ├── figure-05-euclid-lenses.jpg
+                ├── index.md
+                ├── ... [2 more image files hidden] ...
 
 🎯 TARGET: data (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\data)
 --------------------------------------------------------------------------------
@@ -70,9 +83,24 @@ MAX DEPTH      : 5
                 ├── index.html
 └── assets/
     └── css/
-            ├── stylesheet.cd9298b33628769aa1bc1acebbbfd7aa11ce81dfe03484d479e1907760249a1d.css
+            ├── stylesheet.036caf443b389c4f0e49799bfe83bc45f0e723b2a37cfc36ac42c5364af82833.css
+            ├── stylesheet.0ebcdec990e66bec4f276c3c2f312d6563ad6af7f76375f5536d1fcf5e68f178.css
+            ├── stylesheet.113071a8140de58215c107916baf8c2c8594efc88bbef6152e30f22dea22aaeb.css
+            ├── stylesheet.184e66cdb2c2ae39ddf6ac9938686e622c6de381e1188ebbf8679a67a9d1fa60.css
+            ├── stylesheet.209aa06db0486c109fa60e2bc5388faaae50549e7cb58dfb9751c9986e012849.css
+            ├── stylesheet.24bd499b13c861c5bb89be79a971b9a67397835053ccc117fa1154349622b5ef.css
+            ├── stylesheet.2ad6980edaaebe36ad3e1286be2883480019d1c6c979657094ff591fb570e70e.css
+            ├── stylesheet.383b9a15f937948f10f661ce678f0e330267ad538479151c35d333d1f2497216.css
+            ├── stylesheet.487b88bc316583992354487965356c679181cd5cb23c170c8ff5fd48c921520c.css
+            ├── stylesheet.4eb0f870beb3eacb34dc253269c424b99eafc3c5826932e66b0b190af7320883.css
+            ├── ... [13 more code files hidden by Crystal Mode] ...
 └── categories/
         ├── index.html
+    └── generative-ai/
+            ├── index.html
+        └── page/
+            └── 1/
+                    ├── index.html
 └── generative-ai/
         ├── index.html
     └── page/
@@ -87,11 +115,47 @@ MAX DEPTH      : 5
         └── page/
             └── 1/
                     ├── index.html
+    └── vision/
+            ├── index.html
+        └── 01-prologue/
+                ├── figure-01-vit.png
+                ├── figure-01-vit_hu_7489a07332a173e6.png
+                ├── figure-01-vit_hu_d1f8c1c90d3ef23c.png
+                ├── figure-01-vit_hu_e8f86f35dec24de0.png
+                ├── figure-02-chhanda.png
+                ├── index.html
+                ├── ... [5 more image files hidden] ...
+        └── multimodal-models/
+                ├── download.png
+                ├── figure-01-vit.png
+                ├── figure-01-vit.png.png
+                ├── figure-01-vit.png_hu_7489a07332a173e6.png
+                ├── figure-01-vit.png_hu_d1f8c1c90d3ef23c.png
+                ├── index.html
+                ├── ... [17 more image files hidden] ...
+        └── page/
+            └── 1/
+                    ├── index.html
 └── page/
     └── 1/
             ├── index.html
 └── tags/
         ├── index.html
+    └── computer-vision/
+            ├── index.html
+        └── page/
+            └── 1/
+                    ├── index.html
+    └── multimodal/
+            ├── index.html
+        └── page/
+            └── 1/
+                    ├── index.html
+    └── vision-transformers/
+            ├── index.html
+        └── page/
+            └── 1/
+                    ├── index.html
 
 🎯 TARGET: resources (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\resources)
 --------------------------------------------------------------------------------
@@ -109,6 +173,18 @@ MAX DEPTH      : 5
             └── transformers/
                 └── encoder-decoder/
                         ├── transformer_hu_f319dbbe097d0945.png
+            └── vision/
+                └── 01-prologue/
+                        ├── figure-01-vit_hu_7489a07332a173e6.png
+                        ├── figure-01-vit_hu_d1f8c1c90d3ef23c.png
+                        ├── figure-01-vit_hu_e8f86f35dec24de0.png
+                └── multimodal-models/
+                        ├── figure-01-vit.png_hu_7489a07332a173e6.png
+                        ├── figure-01-vit.png_hu_d1f8c1c90d3ef23c.png
+                        ├── figure-01-vit.png_hu_e8f86f35dec24de0.png
+                        ├── figure-01-vit_hu_7489a07332a173e6.png
+                        ├── figure-01-vit_hu_d1f8c1c90d3ef23c.png
+                        ├── ... [4 more image files hidden] ...
 
 🎯 TARGET: static (Path: E:\Code\02-Tower\03-AIM\axiom-ai-01-blog\static)
 --------------------------------------------------------------------------------
@@ -132,11 +208,20 @@ MAX DEPTH      : 5
             └── common/
                     ├── 404.css
                     ├── archive.css
-                    ├── ... [9 more code files hidden by Crystal Mode] ...
+                    ├── footer.css
+                    ├── header.css
+                    ├── main.css
+                    ├── md-content.css
+                    ├── post-entry.css
+                    ├── post-single.css
+                    ├── profile-mode.css
+                    ├── search.css
+                    ├── ... [1 more code files hidden by Crystal Mode] ...
             └── core/
                     ├── license.css
                     ├── reset.css
-                    ├── ... [2 more code files hidden by Crystal Mode] ...
+                    ├── theme-vars.css
+                    ├── zmedia.css
             └── extended/
                     ├── blank.css
             └── includes/
@@ -145,7 +230,7 @@ MAX DEPTH      : 5
         └── js/
                 ├── fastsearch.js
                 ├── fuse.basic.min.js
-                ├── ... [1 more code files hidden by Crystal Mode] ...
+                ├── license.js
     └── i18n/
             ├── ar.yaml
             ├── be.yaml
@@ -199,27 +284,44 @@ MAX DEPTH      : 5
     └── layouts/
             ├── 404.html
             ├── archives.html
+            ├── baseof.html
             ├── index.json
+            ├── list.html
             ├── llms.txt
             ├── robots.txt
-            ├── ... [5 more code files hidden by Crystal Mode] ...
+            ├── search.html
+            ├── single.html
+            ├── taxonomy.html
         └── _markup/
                 ├── render-image.html
         └── _partials/
                 ├── anchored_headings.html
                 ├── author.html
-                ├── ... [20 more code files hidden by Crystal Mode] ...
+                ├── breadcrumbs.html
+                ├── comments.html
+                ├── cover.html
+                ├── edit_post.html
+                ├── extend_footer.html
+                ├── extend_head.html
+                ├── extend_post_content.html
+                ├── footer.html
+                ├── ... [12 more code files hidden by Crystal Mode] ...
             └── templates/
                     ├── opengraph.html
                     ├── schema_json.html
-                    ├── ... [1 more code files hidden by Crystal Mode] ...
+                    ├── twitter_cards.html
                 └── _funcs/
                         ├── get-page-images.html
         └── _shortcodes/
                 ├── audio.html
                 ├── collapse.html
-                ├── ... [6 more code files hidden by Crystal Mode] ...
+                ├── figure.html
+                ├── inTextImg.html
+                ├── ltr.html
+                ├── rawhtml.html
+                ├── rtl.html
+                ├── video.html
 
 ================================================================================
-SUMMARY: Scanned 55 sub-directories and mapped 119 files.
+SUMMARY: Scanned 79 sub-directories and mapped 197 files.
 ================================================================================

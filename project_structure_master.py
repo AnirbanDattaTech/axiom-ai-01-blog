@@ -172,9 +172,9 @@ def generate_consolidated_lde(target_dirs: list, max_depth: int, mode: str, outp
                         else:
                             vulnerable_code.append(code_file)
                     
-                    files_to_print.extend(vulnerable_code[:2])
-                    if len(vulnerable_code) > 2:
-                        hidden_code_count = len(vulnerable_code) - 2
+                    files_to_print.extend(vulnerable_code[:10])
+                    if len(vulnerable_code) > 10:
+                        hidden_code_count = len(vulnerable_code) - 10
                 else:
                     # In AI mode, all code files print
                     files_to_print.extend(code_files)

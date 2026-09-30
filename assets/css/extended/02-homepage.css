@@ -1,0 +1,267 @@
+/* ==========================================================================
+   AXIOM-AI.TECH — HOMEPAGE LAYOUT SPECIFICATION
+   File: assets/css/extended/02-homepage.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   BOX 1: VERTICAL GRID ALIGNMENT (NAVBAR & MAIN CONTAINER)
+   Both containers locked to exact same max-width and padding.
+   Left edge of "axiom-ai.tech" = Left edge of the post cards.
+   -------------------------------------------------------------------------- */
+.header-nav {
+    max-width: var(--nav-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: var(--gap) !important;
+    padding-right: var(--gap) !important;
+    border-bottom: 1px solid var(--border);
+}
+
+.main {
+    max-width: var(--main-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: var(--gap) !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 2: NAVBAR (THE MASTHEAD)
+   -------------------------------------------------------------------------- */
+/* Left side: Brand mark */
+.logo a {
+    font-family: var(--font-ui) !important;
+    font-size: 1.25rem !important;
+    font-weight: var(--brand-weight) !important;
+    letter-spacing: var(--brand-tracking) !important;
+    color: var(--primary) !important;
+}
+
+/* Theme toggle spacing */
+.logo-switches {
+    margin-left: 0.5rem;
+}
+
+/* Right side: Category navigation links */
+.menu {
+    font-family: var(--font-menu) !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+    column-gap: 1.5rem !important;
+}
+
+.menu a {
+    color: var(--secondary) !important;
+    transition: color 0.15s ease;
+}
+
+.menu a:hover,
+.menu .active {
+    color: var(--primary) !important;
+    text-decoration: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 3: THE PORCH ("Let's talk about AI")
+   Reduced vertical padding to eliminate the giant dead space.
+   -------------------------------------------------------------------------- */
+.home-info {
+    min-height: auto !important;          /* Overrides PaperMod's 320px default */
+    margin-top: 1rem !important;
+    margin-bottom: 1.75rem !important;    /* Tight gap to the featured card below */
+    padding-bottom: 1.5rem !important;
+    border-bottom: 1px solid var(--border) !important;
+}
+
+/* Porch Title */
+.home-info .entry-header h1 {
+    font-family: var(--font-heading) !important;
+    font-weight: var(--heading-weight) !important;
+    letter-spacing: var(--heading-tracking) !important;
+}
+
+/* Porch Description */
+.home-info .entry-content {
+    font-family: var(--font-body) !important;
+    font-size: 1.05rem !important;
+    line-height: 1.55 !important;
+    color: var(--secondary) !important;
+    max-width: 680px !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 4: BASE POST CARD ENCLOSURE
+   -------------------------------------------------------------------------- */
+.post-entry {
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    box-shadow: none !important;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+    overflow: hidden;
+}
+
+.post-entry:hover {
+    border-color: var(--tertiary) !important;
+    transform: translateY(-2px);
+}
+
+.entry-header h2 {
+    font-family: var(--font-heading) !important;
+    font-weight: var(--heading-weight) !important;
+    letter-spacing: var(--heading-tracking) !important;
+}
+
+.entry-content {
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    color: var(--secondary) !important;
+}
+
+.entry-footer {
+    font-size: 0.8rem !important;
+    color: var(--secondary) !important;
+    margin-top: 0.75rem !important;
+}
+
+/* --------------------------------------------------------------------------
+   BOX 5: THE FEATURED POST (50/50 HORIZONTAL SPLIT CARD)
+   Using CSS Grid Areas so the text never collapses under the image.
+   Target: .home-info + .post-entry
+   -------------------------------------------------------------------------- */
+@media (min-width: 860px) {
+    .home-info + .post-entry {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-areas:
+            "cover header"
+            "cover content"
+            "cover footer" !important;
+        column-gap: 2rem !important;
+        row-gap: 0.75rem !important;
+        align-items: start !important;
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+
+    /* Column 1: Image spans entire height on left */
+    .home-info + .post-entry .entry-cover {
+        grid-area: cover !important;
+        margin: 0 !important;
+        height: 100% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: #FFFFFF !important;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .home-info + .post-entry .entry-cover img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+        border-radius: 4px;
+    }
+
+    /* Column 2: Content stacked on right */
+    .home-info + .post-entry .entry-header {
+        grid-area: header !important;
+    }
+
+    .home-info + .post-entry .entry-header h2 {
+        font-size: 1.75rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .home-info + .post-entry .entry-content {
+        grid-area: content !important;
+    }
+
+    .home-info + .post-entry .entry-footer {
+        grid-area: footer !important;
+        align-self: end !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   BOX 6: SUBSEQUENT POSTS (2-COLUMN BALANCED CARD GRID)
+   All articles after the featured card flow into a 50/50 grid on desktop.
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    .main {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: space-between !important;
+    }
+
+    /* Porch and Featured Card take full 100% width */
+    .home-info,
+    .home-info + .post-entry {
+        width: 100% !important;
+    }
+
+    /* Every post after the featured card takes exactly 50% minus half the gap */
+    .home-info + .post-entry ~ .post-entry {
+        width: calc(50% - (var(--gap) / 2)) !important;
+        margin-bottom: var(--gap) !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .home-info + .post-entry ~ .post-entry .entry-cover {
+        margin-bottom: 1rem !important;
+    }
+
+    .home-info + .post-entry ~ .post-entry .entry-footer {
+        margin-top: auto !important; /* Pushes date to bottom of card */
+    }
+}
+
+/* Mobile fallback */
+@media (max-width: 767px) {
+    .home-info + .post-entry ~ .post-entry {
+        width: 100% !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   BOX 7: FOOTER
+   -------------------------------------------------------------------------- */
+.footer {
+    max-width: var(--main-width) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 2rem var(--gap) !important;
+    border-top: 1px solid var(--border) !important;
+    font-size: 0.85rem !important;
+    color: var(--secondary) !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE SIDE SPACING (TABLET & MOBILE GUTTERS)
+   Prevents text and cards from hitting the screen edge when resized.
+   ========================================================================== */
+
+/* Tablet & Medium Screens (Below 1140px down to 768px) */
+@media screen and (max-width: 1140px) {
+    .header-nav {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+    .main {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+}
+
+/* Mobile Screens (Below 768px) */
+@media screen and (max-width: 768px) {
+    .header-nav {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+    .main {
+        padding-left: 4rem !important;
+        padding-right: 4rem !important;
+    }
+}

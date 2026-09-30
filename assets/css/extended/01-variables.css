@@ -1,0 +1,150 @@
+/* ==========================================================================
+   AXIOM-AI.TECH — DESIGN TOKENS & TYPOGRAPHY SANDBOX
+   File: assets/css/extended/01-variables.css
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. OPTIONAL WEB FONTS LOAD (High-craft editorial & tech faces)
+   -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@600;700&family=Merriweather:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500;700;800&family=Fira+Sans:wght@500;600;700&family=Merriweather+Sans:wght@500;600;700;800&family=Noto+Sans:wght@500;600;700;800&family=Public+Sans:wght@600;700;800&display=swap');
+
+:root {
+    /* ----------------------------------------------------------------------
+       1. CONTAINER WIDTHS (Snapped to identical 1140px width)
+       ---------------------------------------------------------------------- */
+    --nav-width: 1140px;
+    --main-width: 1140px;
+    --gap: 24px;
+    --radius: 8px;
+
+    /* ======================================================================
+       2. CHOOSE YOUR TYPOGRAPHY PRESET (Comment / Uncomment ONE preset below)
+       ====================================================================== */
+
+    /* ----------------------------------------------------------------------
+       PRESET 1: "The Quanta / Oxford Scholar" (Current Favorite)
+       Serif headings for intellectual weight, clean Sans for fast reading.
+       ---------------------------------------------------------------------- */
+    /* --font-ui: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    --font-heading: "Newsreader", "Lora", Georgia, serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    --heading-weight: 600;
+    --heading-tracking: -0.02em;
+    --brand-weight: 700;
+    --brand-tracking: -0.025em; */
+
+    /* ----------------------------------------------------------------------
+       PRESET 2: "The Stripe / Deep-Tech Systems" (All Modern Grotesque Sans)
+       Pure architectural engineering. Razor-sharp, bold, and clean.
+       ---------------------------------------------------------------------- */
+    
+    /* --font-ui: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: "Plus Jakarta Sans", "Inter", -apple-system, sans-serif;
+    --font-body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --heading-weight: 700;
+    --heading-tracking: -0.03em;
+    --brand-weight: 800;
+    --brand-tracking: -0.03em; */
+   
+
+    /* ----------------------------------------------------------------------
+       PRESET 3: "The Bell Labs / Hardbound Book" (Charter & System Serif)
+       Classic 1980s computer science monograph. Zero eye fatigue.
+       ---------------------------------------------------------------------- */
+    /*
+    --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-heading: "Charter", "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --font-body: "Charter", "Bitstream Charter", "Iowan Old Style", Georgia, serif;
+    --heading-weight: 700;
+    --heading-tracking: -0.01em;
+    --brand-weight: 700;
+    --brand-tracking: -0.02em;
+    */
+
+    /* ----------------------------------------------------------------------
+       PRESET 4: "The Modern Essayist" (Tech Sans Headings + Warm Serif Body)
+       Modern technical titles leading into warm, novelistic prose.
+       ---------------------------------------------------------------------- */
+    
+    --font-ui: "Segoe UI", -apple-system, sans-serif;
+    --font-heading: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: "Segoe UI", -apple-system, sans-serif;
+    --heading-weight: 600;
+    --heading-tracking: -0.015em;
+    --brand-weight: 600;
+    --brand-tracking: -0.01em;
+   
+
+    /* ----------------------------------------------------------------------
+       PRESET 5: "The Pure System Sovereign" (Zero Web-Font Overhead, 0ms Load)
+       Uses the high-end native OS typography of macOS / Windows / Linux.
+       ---------------------------------------------------------------------- */
+    
+    /* --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-heading: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-body: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --heading-weight: 750;
+    --heading-tracking: -0.03em;
+    --brand-weight: 800;
+    --brand-tracking: -0.03em; */
+   
+
+    /* ----------------------------------------------------------------------
+       3. COLOR PALETTE (Pure Luminous White Theme)
+       ---------------------------------------------------------------------- */
+    --theme: #FFFFFF;
+    --entry: #FFFFFF;
+    --card-bg: #FFFFFF;
+    --primary: #0F172A;                  /* Slate 900: Crisp black for headings */
+    --content: #1E293B;                  /* Slate 800: High-comfort body text */
+    --secondary: #64748B;                /* Slate 500: Metadata and citations */
+    --tertiary: #94A3B8;                 /* Slate 400: Borders on hover */
+    --border: #E2E8F0;                   /* Slate 200: Hairline dividers */
+    --code-bg: #F8FAFC;                  /* Slate 50: Clean code block ground */
+    --accent: #2563EB;                   /* Crisp blue accent */
+}
+
+/* --------------------------------------------------------------------------
+   DARK THEME PALETTE
+   -------------------------------------------------------------------------- */
+.dark,
+:root[data-theme="dark"] {
+    --theme: #0F172A;
+    --entry: #1E293B;
+    --card-bg: #1E293B;
+    --primary: #F8FAFC;
+    --content: #E2E8F0;
+    --secondary: #94A3B8;
+    --tertiary: #64748B;
+    --border: #334155;
+    --code-bg: #0B1120;
+    --accent: #60A5FA;
+}
+
+/* --------------------------------------------------------------------------
+   GLOBAL FONT ASSIGNMENTS (Strictly enforced everywhere)
+   -------------------------------------------------------------------------- */
+body {
+    background-color: var(--theme) !important;
+    color: var(--content);
+    font-family: var(--font-body);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+}
+
+/* All headings # to ##### share the EXACT same font family */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-header h2,
+.home-info .entry-header h1 {
+    font-family: var(--font-heading) !important;
+}
+
+/* Navbar and Footer share the neutral UI font */
+.header-nav,
+.logo a,
+.menu,
+.footer {
+    font-family: var(--font-ui) !important;
+}
